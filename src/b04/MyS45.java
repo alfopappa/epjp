@@ -34,26 +34,12 @@ public class MyS45 {
 		System.out.println("upper: " + z.toUpperCase());
 		System.out.println("lower: " + z.toLowerCase());
 		
-        System.out.println("figa[" + " Ahi Ahi Ahi ".trim() + "]");
+        System.out.println("canzone[" + " Ahi Ahi Ahi ".trim() + "]");
         
+        System.out.println(String.valueOf(x));
         
-
-		
-		
+        System.out.println();
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-		
 	}
 }
 
