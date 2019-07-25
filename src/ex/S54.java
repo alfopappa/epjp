@@ -9,9 +9,18 @@ public class S54 {
      */
     public static String checkSign(int value) {
         // TODO
-        return "";
-    }
-    
+    	 if (value < 0) {
+    		 return "negative";
+    	 }
+    		 else if (value == 0) {
+    			 return "zero";
+    		 }
+    		 else {
+    		     return "positive";
+    			 }
+    		 }
+    			 
+
     /**
      * Check if the parameter is odd
      * 
@@ -20,7 +29,12 @@ public class S54 {
      */
     public static boolean isOdd(int value) {
         // TODO
-        return false;
+    	if (value % 2 == 1) {
+        return true; 
+    	}
+    	else {
+    		return false;
+    	}
     }
     
     /**
@@ -31,7 +45,30 @@ public class S54 {
      */
     public static String asWord(int value) {
         // TODO
-        return "";
+    	switch (value) {
+        case 0:
+            return "zero";
+        case 1:
+            return "one";
+        case 2:
+            return "two";
+        case 3: 
+        	return "three";
+        case 4:
+        	return "four";
+        case 5:
+            return "five";
+        case 6:
+            return "six";
+        case 7:
+            return "seven";
+        case 8: 
+        	return "eight";
+        case 9:
+        	return "nine";
+        default: 
+        	return "other";
+    	}
     }
     
     /**
@@ -47,7 +84,13 @@ public class S54 {
      */
     public static char vote(double percentile) {
         // TODO
-        return 'F';
+    	char result = 'F';
+    	   if (percentile >= 90) { result = 'A'; }
+    	   if (percentile >= 80) { result = 'B'; }
+    	   if (percentile >= 70) { result = 'C'; }
+    	   if (percentile >= 60) { result = 'D'; }
+    	return result;
+    
     }
     
     /**
@@ -58,8 +101,24 @@ public class S54 {
      */
     public static boolean isLeapYear(int year) {
         // TODO
-        return false;
+        boolean leap = false;
+        if(year % 4 == 0)
+        {
+            if( year % 100 == 0)
+            {
+                if ( year % 400 == 0)
+                    leap = true;
+                else
+                    leap = false;
+            }
+            else
+                leap = true;
+        }
+        else
+            leap = false;
+		return leap;
     }
+        
     
     /**
      * Sort the input parameters
@@ -70,10 +129,14 @@ public class S54 {
      * @return a sorted array
      */
     public static int[] sort(int a, int b, int c) {
+    	
         int[] result = new int[3];
         
         // TODO
-        
+        result[2] = Math.max(Math.max(a, b),c);
+        result[0] = Math.max(Math.min(a, b),c);
+        result[1] = a + b + c - result[2] - result[0];
         return result;
+       
     }
 }
