@@ -10,9 +10,16 @@ public class S55 {
      */
     public static long sum(int first, int last) {
         // TODO
-        return 0;
+    	int result = 0;
+        while (first <last) 
+        {
+            result += first;
+            first++; 
+        }   
+        return result;
     }
 
+   
     /**
      * Add up only the even numbers in the passed closed interval
      * 
@@ -22,7 +29,15 @@ public class S55 {
      */
     public static long evenSum(int first, int last) {
         // TODO
-        return 0;
+    	int result = 0;
+    	int value = 0;
+		if (value % 2 == 0) {
+    		while (first < last) {
+    			result += first;
+    			first++;	
+    		}
+    	}
+        return result;
     }
     
     /**
@@ -33,8 +48,19 @@ public class S55 {
      */
     public static long factorial(int value) {
         // TODO
-        return 0;
+    	int fact = 1;
+        int number = 0;
+        for(int i=1;i<=number;i++)
+        {
+            fact = i * fact;
+        }
+		return +number;
+
+		
+		
     }
+		
+   
     
     /**
      * Fibonacci number (0, 1, 1, 2, 3, 5, 8, …)
