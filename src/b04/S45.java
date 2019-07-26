@@ -8,6 +8,7 @@ public class S45 {
         System.out.println("s, t, u: " + s + ", " + t + ", " + u);
 
         System.out.println("char at position 1 in s: " + s.charAt(1));
+        
 
         System.out.println("s < t: " + s.compareTo(t));
         System.out.println("t > s: " + t.compareTo(s));
