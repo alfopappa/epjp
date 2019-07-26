@@ -2,7 +2,7 @@ package b04.s40;
 
 public class ForEach {
     public static void main(String[] args) {
-        String[] array = new String[5];
+        String[] array = {"a", "b", "c"};
         // ...
 
         for (String item : array) {
