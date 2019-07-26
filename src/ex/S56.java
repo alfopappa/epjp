@@ -8,9 +8,11 @@ public class S56 {
      * @return the input reversed
      */
     public static String reverse(String s) {
-        // TODO
-        return "";
+    	StringBuilder sb = new StringBuilder(s);
+		sb.reverse();
+    	return sb.toString();
     }
+    
 
     /**
      * Check if the parameter is a palindrome
@@ -19,9 +21,14 @@ public class S56 {
      * @return true if the parameter is a palindrome
      */
     public static boolean isPalindrome(String s) {
-        // TODO
+    	
+        if (s.length() == 0 || s.length() == 1)
+            return true; 
+        if (s.charAt(0) == s.charAt(s.length()-1))
+            return isPalindrome(s.substring(1, s.length()-1));
         return false;
     }
+           
 
     /**
      * Remove vowels from the parameter
@@ -30,8 +37,8 @@ public class S56 {
      * @return a string, same of input but without vowels
      */
     public static String removeVowels(String s) {
-        // TODO
-        return "";
+    	return s.replaceAll("[aeiouAEIOU]", "");    	
+        
     }
 
     /**
@@ -41,8 +48,14 @@ public class S56 {
      * @return the converted integer
      */
     public static int bin2dec(String s) {
-        // TODO
-        return 0;
+    	   double j = 0;
+    	    for(int i = 0; i < s.length(); i++){
+    	        if (s.charAt(i) == '1') {
+    	         j = j + Math.pow(2, s.length() - 1 - i);
+    	     }
+
+    	    }
+    	    return (int) j;
     }
 
     /**
@@ -52,11 +65,11 @@ public class S56 {
      * @return a new array holding the same elements of input, in reversed order
      */
     public static int[] reverse(int[] data) {
-        int[] result = new int[0];
-
-        // TODO
-
-        return result;
+        int[] result = new int[data.length];
+        for (int i = 0; i < data.length; i++) {
+            result[i] = data[data.length - 1 - i];
+        }
+	     return result;
     }
 
     /**
@@ -66,9 +79,18 @@ public class S56 {
      * @return the average
      */
     public static double average(int[] data) {
-        // TODO
-        return 0;
-    }
+    	 int result = 0;
+    	 
+    	 for(int i = 0; i < data.length; i = i+1) {
+    	      result = result + data[i];
+    	    }
+
+    	    result = result / data.length;
+
+    	    return result;
+    	    
+   }
+
     
     /**
      * Find the largest value
@@ -77,7 +99,13 @@ public class S56 {
      * @return the largest value
      */
     public static int max(int[] data) {
-        // TODO
-        return 0;
+    	int max = data[0];
+    	  for(int i = 1; i < data.length; i++) {
+    	    if(data[i] > max) {
+    		  max = data[i];
+    		}
+    	  }
+    	  return max;
+      
     }
 }
