@@ -48,7 +48,16 @@ public class S44Chicken {
 
 	@Override
 	public String toString() {
-		return "S44Chicken [name=" + name + ", weight=" + weight + ", female=" + female + "]";
+//		return "S44Chicken [name=" + name + ", weight=" + weight + ", female=" + female + "]";
+		
+		String result; // = "[" + name + "," + weight=" + ", female=" + female +"]" ;
+		
+		result = String.format("%s, %f, %b", name, weight, female);
+		
+				
+		
+		
+		return result;
 	}
 
 }
