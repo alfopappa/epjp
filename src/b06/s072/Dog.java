@@ -15,4 +15,5 @@ public class Dog extends Pet {
     public double getSpeed() {
         return speed;
     }
+    
 }

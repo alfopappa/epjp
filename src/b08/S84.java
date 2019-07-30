@@ -12,8 +12,8 @@ public class S84 {
         File f = new File("/tmp/hello.txt");
 
         try {
-            PrintWriter pw = new PrintWriter(new FileWriter(f));
-            pw.println("hello");
+            PrintWriter pw = new PrintWriter(new FileWriter(f, true));
+            pw.println("Hi Alfonso!!");
             pw.flush();
             pw.close();
         } catch (IOException e) {

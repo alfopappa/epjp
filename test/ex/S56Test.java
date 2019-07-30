@@ -20,6 +20,13 @@ class S56Test {
 
         assertThat(actual, is(true));
     }
+    
+    @Test
+    void isPalindromeNegative() {
+        boolean actual = S56.isPalindrome("pollo");
+
+        assertThat(actual, is(false));
+    }
 
     @Test
     void removeVowelsPlain() {
