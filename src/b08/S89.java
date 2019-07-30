@@ -7,7 +7,8 @@ import java.util.logging.Logger;
 
 public class S89 {
     public static void someLog() {
-        Logger log = Logger.getLogger("sample");
+        Logger log = Logger.getLogger("sample");   
+                                                             //il più usato è slf4j
 
         log.finest("finest message");
         log.finer("finer message");
