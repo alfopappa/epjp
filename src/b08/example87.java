@@ -5,11 +5,12 @@ package b08;
 
 	public class example87
 	{
-	    public static void main (String[] args)
+	    private static Scanner input;
+
+		public static void main (String[] args)
 	        {
 
-	        //creo lo scanner
-	        Scanner input = new Scanner(System.in);
+	        input = new Scanner(System.in);
 
 	        //dichiaro le variabili e le inizializzo se necessario
 	        float somma, media, x;
