@@ -26,6 +26,10 @@ class TabellaTest {
 		assertEquals(expected, actual);
 	}
 	
+	
+	
+	
+	
 	@Test
 	void testCheck() {
 		
@@ -33,9 +37,6 @@ class TabellaTest {
 		boolean actualChecked = tab1.check(27);
 		assertThat(actualChecked, is(false));
 		
-	
-
-	
 	}
 
 	

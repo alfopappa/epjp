@@ -11,8 +11,12 @@ public class S095 {
 
         System.out.println("At index 2: " + list.get(2));
         list.add(2, -997);
+
         System.out.println("Index of -997: " + list.indexOf(-997));
 
+        
+        System.out.println(list);
+        
         list.remove(3);
         list.set(3, 42);
         System.out.println(list);

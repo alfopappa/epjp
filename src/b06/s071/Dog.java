@@ -3,7 +3,6 @@ package b06.s071;
 public class Dog {
 	private static final int DEFAULT_WEIGHT = 10;
 	private static final String DEFAULT_NAME = "??";
-    private static double speed;
     
 	int weight;
  String name;
@@ -14,13 +13,13 @@ public class Dog {
 	}
 
 	public Dog(String name) {
-		this(DEFAULT_WEIGHT, name, speed);
+		this(DEFAULT_WEIGHT, name);
 	}
 
-	public Dog(int weight, String name, double speed) {
+	public Dog(int weight, String name) {
 		this.weight = weight;
 		this.name = name;
-		Dog.speed = speed;
+		
 		
 	
 	}
@@ -30,11 +29,7 @@ public class Dog {
 		return "Dog [weight=" + weight + ", name=" + name + "]";
 	}
 	
-	public double getSpeed() {
-		return speed;
-	}
+
 	
-	public String getName() {
-		return name;
-	}
+	
 }

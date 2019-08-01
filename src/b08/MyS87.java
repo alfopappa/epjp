@@ -3,8 +3,10 @@ package b08;
 import java.util.Scanner;
 
 public class MyS87 {
+	private static Scanner scanner;
+
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+		scanner = new Scanner(System.in);
 		System.out.println("Please, enter some int numbers");
 
 		while (scanner.hasNextInt()) {
@@ -35,3 +37,4 @@ public class MyS87 {
 	}
 
 }
+DA CORREGGERE 

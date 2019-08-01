@@ -6,6 +6,9 @@ import java.util.Collection;
 import java.util.Iterator;
 
 public class S094 {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Collection<Integer> coll = emptyCollection();
 
