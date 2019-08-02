@@ -3,32 +3,40 @@ package exercisePersonVillainHeroCommonperson;
 
 
 public class Villain extends Person {
-	protected static final double DEFAULT_SHOOTINGPOWER = 100;
-	private double shootingpower;
+	protected static final int DEFAULT_SHOOTINGPOWER = 100;
+	private int shootingpower;
 	
-	public Villain() {
-		  
+	
+	Villain(String name) {
+		super(name);
+		this.shootingpower = DEFAULT_SHOOTINGPOWER;
+	}
+	
+	Villain(String name, int energy) {
+		  super (name, energy);
+		  this.shootingpower = DEFAULT_SHOOTINGPOWER;	 
+	}
+	
+	Villain(String name, int energy, int power) {
+		super(name, energy);
+		this.shootingpower = power;
+	}
+	
+		
+	public void shoot(Person p) {
+		p.ChangeEnergy(-shootingpower);
     }
-	public Villain(String name, double shootingpower) {
-		this(name, shootingpower);
-	}
-	public Villain(String name, int energy, double shootingpower) {
-		  super (name);
-		  this.shootingpower = shootingpower;	 
-	}
-	  
-	public double getShootingpower() {
-		return shootingpower;
-		
 
-
-    	 
-     }
+	@Override
+	public String toString() {
+		return "Villain [shootingpower=" + shootingpower + "]";
+	}
 		
+	
 
 		
 		
 			
 
 	}
-}
+

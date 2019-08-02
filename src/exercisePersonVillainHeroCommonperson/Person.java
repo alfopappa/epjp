@@ -1,10 +1,10 @@
 package exercisePersonVillainHeroCommonperson;
 
 public abstract class Person {
-	private static final double DEFAULT_ENERGY = 10 ;
+	private static final int DEFAULT_ENERGY = 10 ;
 	private static final String DEFAULT_NAME = "NOME";
 	
-    double energy;
+    int energy;
     String name;
 
     
@@ -14,20 +14,21 @@ public abstract class Person {
 	}
     
 
-	public Person(String name, double energy) {
+	public Person(String name, int energy) {
 		this.energy = energy;
 		this.name = name;
 			
 	}
 
-    public ChangeEnergy() {
+    public void ChangeEnergy(int value) {
+    	energy = energy + value;
+    	
+    	
+    	
     	
     }
     
-	public isAlive() {
-		
-	}
-
+	
 	public String getName() {
 		return name;
 	}
