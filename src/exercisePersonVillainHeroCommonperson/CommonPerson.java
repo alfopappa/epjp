@@ -1,7 +1,19 @@
 package exercisePersonVillainHeroCommonperson;
 
 public class CommonPerson extends Person {
-	CommonPerson(String name) {
-		super(name);
-}
+	
+	public CommonPerson(String name, int energy) {
+		super(name, energy);
+	}
+	
+	public CommonPerson() {
+		this(DEFAULT_NAME, DEFAULT_ENERGY);
+	}
+
+	@Override
+	public String toString() {
+		return "CommonPerson []";
+	}
+	
+	
 }
