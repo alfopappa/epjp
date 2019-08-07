@@ -10,5 +10,4 @@ create table details (
     coder_id integer
         constraint detail_coder_id_fk references coders(coder_id) on delete cascade,
 
-    constraint detail_name_status_uq unique(name, status)
-);
+    constraint detail_name_status_uq unique(name, status));

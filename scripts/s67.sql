@@ -27,3 +27,4 @@ select * from users order by gender;
 
 -- cleanup
 drop table users;
+
