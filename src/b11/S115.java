@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import oracle.jdbc.pool.OracleDataSource;
 
 public class S115 {
-    private static final String URL = "jdbc:oracle:thin:@localhost:1521/xepdb1";
+    private static final String URL = "jdbc:oracle:thin:@localhost:1521/xe";
     private static final String USER = "me";
     private static final String PASSWORD = "password";
 

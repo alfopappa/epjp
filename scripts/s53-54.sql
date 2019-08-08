@@ -72,7 +72,8 @@ where e.hire_date < m.hire_date;
 --Chi ha lo stesso manager di Lisa Ozer
 
 
-@TODO
+
+
 
 
 
