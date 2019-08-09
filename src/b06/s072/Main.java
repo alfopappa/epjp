@@ -14,6 +14,7 @@ public class Main {
         double sfastest = dogs[0].getSpeed();
         Dog fastest = dogs[0];
         for (int i = 1; i < dogs.length; i++); {
+        	// TODO
 			if(dogs[i].getSpeed() > fastest.getSpeed()) {
         
         fastest = dogs[i];

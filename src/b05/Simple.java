@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 class SimpleTest {
 	
-	
+	 
 	@Test
 	void isEvenFalse() {
 		Simple simple = new Simple();
